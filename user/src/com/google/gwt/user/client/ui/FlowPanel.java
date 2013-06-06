@@ -26,7 +26,7 @@ import com.google.gwt.dom.client.Document;
  * <img class='gallery' src='doc-files/FlowPanel.png'/>
  * </p>
  */
-public class FlowPanel extends ComplexPanel implements InsertPanel.ForIsWidget {
+public class FlowPanel extends ComplexPanel implements IsFlowPanel {
   /**
    * Creates an empty flow panel.
    */

@@ -27,7 +27,7 @@ package com.google.gwt.user.client.ui;
  * {@example com.google.gwt.examples.FlexTableExample}
  * </p>
  */
-public class FlexTable extends HTMLTable {
+public class FlexTable extends HTMLTable implements IsFlexTable {
 
   /**
    * FlexTable-specific implementation of {@link HTMLTable.CellFormatter}. The
@@ -102,6 +102,7 @@ public class FlexTable extends HTMLTable {
    * @param row the row to which the new cell will be added
    * @throws IndexOutOfBoundsException
    */
+  @Override
   public void addCell(int row) {
     insertCell(row, getCellCount(row));
   }
@@ -164,6 +165,7 @@ public class FlexTable extends HTMLTable {
   /**
    * Remove all rows in this table.
    */
+  @Override
   public void removeAllRows() {
     int numRows = getRowCount();
     for (int i = 0; i < numRows; i++) {
@@ -184,6 +186,7 @@ public class FlexTable extends HTMLTable {
    * @param num the number of cells to be removed
    * @throws IndexOutOfBoundsException
    */
+  @Override
   public void removeCells(int row, int column, int num) {
     for (int i = 0; i < num; i++) {
       removeCell(row, column);

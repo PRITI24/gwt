@@ -28,7 +28,7 @@ import com.google.gwt.core.client.JavaScriptObject;
  * 
  * @see Element#getStyle()
  */
-public class Style extends JavaScriptObject {
+public class Style extends JavaScriptObject implements IsStyle {
 
   /**
    * Interface to be implemented by enumerated CSS values.
@@ -1176,6 +1176,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the background-color css property.
    */
+  @Override
   public final void clearBackgroundColor() {
      clearProperty(STYLE_BACKGROUND_COLOR);
   }
@@ -1183,6 +1184,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the background-image css property.
    */
+  @Override
   public final void clearBackgroundImage() {
      clearProperty(STYLE_BACKGROUND_IMAGE);
   }
@@ -1190,6 +1192,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the border-color css property.
    */
+  @Override
   public final void clearBorderColor() {
      clearProperty(STYLE_BORDER_COLOR);
   }
@@ -1197,6 +1200,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clears the border-style CSS property.
    */
+  @Override
   public final void clearBorderStyle() {
     clearProperty(STYLE_BORDER_STYLE);
   }
@@ -1204,6 +1208,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the border-width css property.
    */
+  @Override
   public final void clearBorderWidth() {
      clearProperty(STYLE_BORDER_WIDTH);
   }
@@ -1211,6 +1216,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the bottom css property.
    */
+  @Override
   public final void clearBottom() {
      clearProperty(STYLE_BOTTOM);
   }
@@ -1218,6 +1224,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the 'clear' CSS property.
    */
+  @Override
   public final void clearClear() {
      clearProperty(STYLE_CLEAR);
   }
@@ -1225,6 +1232,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the color css property.
    */
+  @Override
   public final void clearColor() {
      clearProperty(STYLE_COLOR);
   }
@@ -1232,6 +1240,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clears the cursor CSS property.
    */
+  @Override
   public final void clearCursor() {
     clearProperty(STYLE_CURSOR);
   }
@@ -1239,6 +1248,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clears the display CSS property.
    */
+  @Override
   public final void clearDisplay() {
     clearProperty(STYLE_DISPLAY);
   }
@@ -1246,6 +1256,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the float css property.
    */
+  @Override
   public final void clearFloat() {
     clearProperty(DOMImpl.impl.cssFloatPropertyName());
   }
@@ -1253,6 +1264,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the font-size css property.
    */
+  @Override
   public final void clearFontSize() {
     clearProperty(STYLE_FONT_SIZE);
   }
@@ -1260,6 +1272,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clears the font-style CSS property.
    */
+  @Override
   public final void clearFontStyle() {
     clearProperty(STYLE_FONT_STYLE);
   }
@@ -1267,6 +1280,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clears the font-weight CSS property.
    */
+  @Override
   public final void clearFontWeight() {
     clearProperty(STYLE_FONT_WEIGHT);
   }
@@ -1274,6 +1288,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the height css property.
    */
+  @Override
   public final void clearHeight() {
      clearProperty(STYLE_HEIGHT);
   }
@@ -1281,6 +1296,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the left css property.
    */
+  @Override
   public final void clearLeft() {
      clearProperty(STYLE_LEFT);
   }
@@ -1288,6 +1304,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the line-height css property.
    */
+  @Override
   public final void clearLineHeight() {
      clearProperty(STYLE_LINE_HEIGHT);
   }
@@ -1295,6 +1312,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clears the list-style-type CSS property.
    */
+  @Override
   public final void clearListStyleType() {
     clearProperty(STYLE_LIST_STYLE_TYPE);
   }
@@ -1302,6 +1320,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the margin css property.
    */
+  @Override
   public final void clearMargin() {
      clearProperty(STYLE_MARGIN);
   }
@@ -1309,6 +1328,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the margin-bottom css property.
    */
+  @Override
   public final void clearMarginBottom() {
      clearProperty(STYLE_MARGIN_BOTTOM);
   }
@@ -1316,6 +1336,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the margin-left css property.
    */
+  @Override
   public final void clearMarginLeft() {
      clearProperty(STYLE_MARGIN_LEFT);
   }
@@ -1323,6 +1344,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the margin-right css property.
    */
+  @Override
   public final void clearMarginRight() {
      clearProperty(STYLE_MARGIN_RIGHT);
   }
@@ -1330,6 +1352,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the margin-top css property.
    */
+  @Override
   public final void clearMarginTop() {
      clearProperty(STYLE_MARGIN_TOP);
   }
@@ -1337,6 +1360,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the opacity css property.
    */
+  @Override
   public final void clearOpacity() {
     DOMImpl.impl.cssClearOpacity(this);
   }
@@ -1344,6 +1368,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the outline-color css property.
    */
+  @Override
   public final void clearOutlineColor() {
      clearProperty(STYLE_OUTLINE_COLOR);
   }
@@ -1351,6 +1376,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clears the outline-style CSS property.
    */
+  @Override
   public final void clearOutlineStyle() {
     clearProperty(STYLE_OUTLINE_STYLE);
   }
@@ -1358,6 +1384,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the outline-width css property.
    */
+  @Override
   public final void clearOutlineWidth() {
      clearProperty(STYLE_OUTLINE_WIDTH);
   }
@@ -1365,6 +1392,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clears the overflow CSS property.
    */
+  @Override
   public final void clearOverflow() {
     clearProperty(STYLE_OVERFLOW);
   }
@@ -1372,6 +1400,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clears the overflow-x CSS property.
    */
+  @Override
   public final void clearOverflowX() {
     clearProperty(STYLE_OVERFLOW_X);
   }
@@ -1379,6 +1408,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clears the overflow-y CSS property.
    */
+  @Override
   public final void clearOverflowY() {
     clearProperty(STYLE_OVERFLOW_Y);
   }
@@ -1386,6 +1416,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the padding css property.
    */
+  @Override
   public final void clearPadding() {
      clearProperty(STYLE_PADDING);
   }
@@ -1393,6 +1424,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the padding-bottom css property.
    */
+  @Override
   public final void clearPaddingBottom() {
      clearProperty(STYLE_PADDING_BOTTOM);
   }
@@ -1400,6 +1432,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the padding-left css property.
    */
+  @Override
   public final void clearPaddingLeft() {
      clearProperty(STYLE_PADDING_LEFT);
   }
@@ -1407,6 +1440,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the padding-right css property.
    */
+  @Override
   public final void clearPaddingRight() {
      clearProperty(STYLE_PADDING_RIGHT);
   }
@@ -1414,6 +1448,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the padding-top css property.
    */
+  @Override
   public final void clearPaddingTop() {
      clearProperty(STYLE_PADDING_TOP);
   }
@@ -1421,6 +1456,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clears the position CSS property.
    */
+  @Override
   public final void clearPosition() {
     clearProperty(STYLE_POSITION);
   }
@@ -1428,6 +1464,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clears the value of a named property, causing it to revert to its default.
    */
+  @Override
   public final void clearProperty(String name) {
     setProperty(name, "");
   }
@@ -1435,6 +1472,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the right css property.
    */
+  @Override
   public final void clearRight() {
      clearProperty(STYLE_RIGHT);
   }
@@ -1442,6 +1480,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the table-layout css property.
    */
+  @Override
   public final void clearTableLayout() {
     clearProperty(STYLE_TABLE_LAYOUT);
   }
@@ -1449,6 +1488,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the 'text-align' CSS property.
    */
+  @Override
   public final void clearTextAlign() {
     clearProperty(STYLE_TEXT_ALIGN);
   }
@@ -1456,6 +1496,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clears the text-decoration CSS property.
    */
+  @Override
   public final void clearTextDecoration() {
     clearProperty(STYLE_TEXT_DECORATION);
   }
@@ -1463,6 +1504,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the 'text-indent' CSS property.
    */
+  @Override
   public final void clearTextIndent() {
     clearProperty(STYLE_TEXT_INDENT);
   }
@@ -1470,6 +1512,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the 'text-justify' CSS3 property.
    */
+  @Override
   public final void clearTextJustify() {
     clearProperty(STYLE_TEXT_JUSTIFY);
   }
@@ -1477,6 +1520,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the 'text-overflow' CSS3 property.
    */
+  @Override
   public final void clearTextOverflow() {
     clearProperty(STYLE_TEXT_OVERFLOW);
   }
@@ -1484,6 +1528,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the 'text-transform' CSS property.
    */
+  @Override
   public final void clearTextTransform() {
     clearProperty(STYLE_TEXT_TRANSFORM);
   }
@@ -1491,13 +1536,23 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the top css property.
    */
+  @Override
   public final void clearTop() {
      clearProperty(STYLE_TOP);
   }
 
   /**
+   * Clears the vertical align CSS property.
+   */
+  @Override
+  public final void clearVerticalAlign() {
+    clearProperty(STYLE_VERTICAL_ALIGN);
+  }
+
+  /**
    * Clears the visibility CSS property.
    */
+  @Override
   public final void clearVisibility() {
     clearProperty(STYLE_VISIBILITY);
   }
@@ -1505,6 +1560,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the 'white-space' CSS property.
    */
+  @Override
   public final void clearWhiteSpace() {
     clearProperty(STYLE_WHITE_SPACE);
   }
@@ -1512,6 +1568,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the width css property.
    */
+  @Override
   public final void clearWidth() {
      clearProperty(STYLE_WIDTH);
   }
@@ -1519,6 +1576,7 @@ public class Style extends JavaScriptObject {
   /**
    * Clear the z-index css property.
    */
+  @Override
   public final void clearZIndex() {
      clearProperty(STYLE_Z_INDEX);
   }
@@ -1526,6 +1584,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the background-color css property.
    */
+  @Override
   public final String getBackgroundColor() {
     return getProperty(STYLE_BACKGROUND_COLOR);
   }
@@ -1533,6 +1592,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the background-image css property.
    */
+  @Override
   public final String getBackgroundImage() {
     return getProperty(STYLE_BACKGROUND_IMAGE);
   }
@@ -1540,6 +1600,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the border-color css property.
    */
+  @Override
   public final String getBorderColor() {
     return getProperty(STYLE_BORDER_COLOR);
   }
@@ -1547,6 +1608,7 @@ public class Style extends JavaScriptObject {
   /**
    * Gets the border-style CSS property.
    */
+  @Override
   public final String getBorderStyle() {
     return getProperty(STYLE_BORDER_STYLE);
   }
@@ -1554,6 +1616,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the border-width css property.
    */
+  @Override
   public final String getBorderWidth() {
     return getProperty(STYLE_BORDER_WIDTH);
   }
@@ -1561,6 +1624,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the bottom css property.
    */
+  @Override
   public final String getBottom() {
     return getProperty(STYLE_BOTTOM);
   }
@@ -1568,6 +1632,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the 'clear' CSS property.
    */
+  @Override
   public final String getClear() {
     return getProperty(STYLE_CLEAR);
   }
@@ -1575,6 +1640,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the color css property.
    */
+  @Override
   public final String getColor() {
     return getProperty(STYLE_COLOR);
   }
@@ -1582,6 +1648,7 @@ public class Style extends JavaScriptObject {
   /**
    * Gets the cursor CSS property.
    */
+  @Override
   public final String getCursor() {
     return getProperty(STYLE_CURSOR);
   }
@@ -1589,13 +1656,23 @@ public class Style extends JavaScriptObject {
   /**
    * Gets the display CSS property.
    */
+  @Override
   public final String getDisplay() {
     return getProperty(STYLE_DISPLAY);
   }
 
   /**
+   * Get the float css property.
+   */
+  @Override
+  public final String getFloat() {
+    return getProperty(DOMImpl.impl.cssFloatPropertyName());
+  }
+
+  /**
    * Get the font-size css property.
    */
+  @Override
   public final String getFontSize() {
     return getProperty(STYLE_FONT_SIZE);
   }
@@ -1603,6 +1680,7 @@ public class Style extends JavaScriptObject {
   /**
    * Gets the font-style CSS property.
    */
+  @Override
   public final String getFontStyle() {
     return getProperty(STYLE_FONT_STYLE);
   }
@@ -1610,6 +1688,7 @@ public class Style extends JavaScriptObject {
   /**
    * Gets the font-weight CSS property.
    */
+  @Override
   public final String getFontWeight() {
     return getProperty(STYLE_FONT_WEIGHT);
   }
@@ -1617,6 +1696,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the height css property.
    */
+  @Override
   public final String getHeight() {
     return getProperty(STYLE_HEIGHT);
   }
@@ -1624,6 +1704,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the left css property.
    */
+  @Override
   public final String getLeft() {
     return getProperty(STYLE_LEFT);
   }
@@ -1631,6 +1712,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the line-height css property.
    */
+  @Override
   public final String getLineHeight() {
     return getProperty(STYLE_LINE_HEIGHT);
   }
@@ -1638,6 +1720,7 @@ public class Style extends JavaScriptObject {
   /**
    * Gets the list-style-type CSS property.
    */
+  @Override
   public final String getListStyleType() {
     return getProperty(STYLE_LIST_STYLE_TYPE);
   }
@@ -1645,6 +1728,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the margin css property.
    */
+  @Override
   public final String getMargin() {
     return getProperty(STYLE_MARGIN);
   }
@@ -1652,6 +1736,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the margin-bottom css property.
    */
+  @Override
   public final String getMarginBottom() {
     return getProperty(STYLE_MARGIN_BOTTOM);
   }
@@ -1659,6 +1744,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the margin-left css property.
    */
+  @Override
   public final String getMarginLeft() {
     return getProperty(STYLE_MARGIN_LEFT);
   }
@@ -1666,6 +1752,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the margin-right css property.
    */
+  @Override
   public final String getMarginRight() {
     return getProperty(STYLE_MARGIN_RIGHT);
   }
@@ -1673,6 +1760,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the margin-top css property.
    */
+  @Override
   public final String getMarginTop() {
     return getProperty(STYLE_MARGIN_TOP);
   }
@@ -1680,20 +1768,47 @@ public class Style extends JavaScriptObject {
   /**
    * Get the opacity css property.
    */
+  @Override
   public final String getOpacity() {
     return getProperty(STYLE_OPACITY);
   }
 
   /**
+   * Gets the outline color CSS property.
+   */
+  @Override
+  public final String getOutlineColor() {
+    return getProperty(STYLE_OUTLINE_COLOR);
+  }
+
+  /**
+   * Gets the outline style CSS property.
+   */
+  @Override
+  public final String getOutlineStyle() {
+    return getProperty(STYLE_OUTLINE_STYLE);
+  }
+
+  /**
+   * Gets the outline style CSS property.
+   */
+  @Override
+  public final String getOutlineWidth() {
+    return getProperty(STYLE_OUTLINE_WIDTH);
+  }
+
+  /**
    * Gets the overflow CSS property.
    */
+  @Override
   public final String getOverflow() {
     return getProperty(STYLE_OVERFLOW);
   }
 
   /**
-   * Gets the overflow-x CSS property. 
+   * Gets the overflow-x CSS property.
    */
+  @Override
   public final String getOverflowX() {
     return getProperty(STYLE_OVERFLOW_X);
   }
@@ -1701,6 +1816,7 @@ public class Style extends JavaScriptObject {
   /**
    * Gets the overflow-y CSS property. 
    */
+  @Override
   public final String getOverflowY() {
     return getProperty(STYLE_OVERFLOW_Y);
   }
@@ -1708,6 +1824,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the padding css property.
    */
+  @Override
   public final String getPadding() {
     return getProperty(STYLE_PADDING);
   }
@@ -1715,6 +1832,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the padding-bottom css property.
    */
+  @Override
   public final String getPaddingBottom() {
     return getProperty(STYLE_PADDING_BOTTOM);
   }
@@ -1722,6 +1840,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the padding-left css property.
    */
+  @Override
   public final String getPaddingLeft() {
     return getProperty(STYLE_PADDING_LEFT);
   }
@@ -1729,6 +1848,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the padding-right css property.
    */
+  @Override
   public final String getPaddingRight() {
     return getProperty(STYLE_PADDING_RIGHT);
   }
@@ -1736,6 +1856,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the padding-top css property.
    */
+  @Override
   public final String getPaddingTop() {
     return getProperty(STYLE_PADDING_TOP);
   }
@@ -1743,6 +1864,7 @@ public class Style extends JavaScriptObject {
   /**
    * Gets the position CSS property.
    */
+  @Override
   public final String getPosition() {
     return getProperty(STYLE_POSITION);
   }
@@ -1750,6 +1872,7 @@ public class Style extends JavaScriptObject {
   /**
    * Gets the value of a named property.
    */
+  @Override
   public final String getProperty(String name) {
     assertCamelCase(name);
     return getPropertyImpl(name);
@@ -1758,6 +1881,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the right css property.
    */
+  @Override
   public final String getRight() {
     return getProperty(STYLE_RIGHT);
   }
@@ -1765,6 +1889,7 @@ public class Style extends JavaScriptObject {
   /**
    * Gets the table-layout property.
    */
+  @Override
   public final String getTableLayout() {
     return getProperty(STYLE_TABLE_LAYOUT);
   }
@@ -1772,6 +1897,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the 'text-align' CSS property.
    */
+  @Override
   public final String getTextAlign() {
     return getProperty(STYLE_TEXT_ALIGN);
   }
@@ -1779,6 +1905,7 @@ public class Style extends JavaScriptObject {
   /**
    * Gets the text-decoration CSS property.
    */
+  @Override
   public final String getTextDecoration() {
     return getProperty(STYLE_TEXT_DECORATION);
   }
@@ -1786,6 +1913,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the 'text-indent' CSS property.
    */
+  @Override
   public final String getTextIndent() {
     return getProperty(STYLE_TEXT_INDENT);
   }
@@ -1793,6 +1921,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the 'text-justify' CSS3 property.
    */
+  @Override
   public final String getTextJustify() {
     return getProperty(STYLE_TEXT_JUSTIFY);
   }
@@ -1800,6 +1929,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the 'text-overflow' CSS3 property.
    */
+  @Override
   public final String getTextOverflow() {
     return getProperty(STYLE_TEXT_OVERFLOW);
   }
@@ -1807,6 +1937,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the 'text-transform' CSS property.
    */
+  @Override
   public final String getTextTransform() {
     return getProperty(STYLE_TEXT_TRANSFORM);
   }
@@ -1814,6 +1945,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the top css property.
    */
+  @Override
   public final String getTop() {
     return getProperty(STYLE_TOP);
   }
@@ -1821,6 +1953,7 @@ public class Style extends JavaScriptObject {
   /**
    * Gets the vertical-align CSS property.
    */
+  @Override
   public final String getVerticalAlign() {
     return getProperty(STYLE_VERTICAL_ALIGN);
   }
@@ -1828,6 +1961,7 @@ public class Style extends JavaScriptObject {
   /**
    * Gets the visibility CSS property.
    */
+  @Override
   public final String getVisibility() {
     return getProperty(STYLE_VISIBILITY);
   }
@@ -1835,6 +1969,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the 'white-space' CSS property.
    */
+  @Override
   public final String getWhiteSpace() {
     return getProperty(STYLE_WHITE_SPACE);
   }
@@ -1842,6 +1977,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the width css property.
    */
+  @Override
   public final String getWidth() {
     return getProperty(STYLE_WIDTH);
   }
@@ -1849,6 +1985,7 @@ public class Style extends JavaScriptObject {
   /**
    * Get the z-index css property.
    */
+  @Override
   public final String getZIndex() {
     return DOMImpl.impl.getNumericStyleProperty(this, STYLE_Z_INDEX);
   }
@@ -1856,6 +1993,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the background-color css property.
    */
+  @Override
   public final void setBackgroundColor(String value) {
     setProperty(STYLE_BACKGROUND_COLOR, value);
   }
@@ -1863,6 +2001,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the background-image css property.
    */
+  @Override
   public final void setBackgroundImage(String value) {
     setProperty(STYLE_BACKGROUND_IMAGE, value);
   }
@@ -1870,6 +2009,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the border-color css property.
    */
+  @Override
   public final void setBorderColor(String value) {
     setProperty(STYLE_BORDER_COLOR, value);
   }
@@ -1877,6 +2017,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the border-style CSS property.
    */
+  @Override
   public final void setBorderStyle(BorderStyle value) {
     setProperty(STYLE_BORDER_STYLE, value.getCssName());
   }
@@ -1884,6 +2025,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the border-width css property.
    */
+  @Override
   public final void setBorderWidth(double value, Unit unit) {
     setProperty(STYLE_BORDER_WIDTH, value, unit);
   }
@@ -1891,6 +2033,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the bottom css property.
    */
+  @Override
   public final void setBottom(double value, Unit unit) {
     setProperty(STYLE_BOTTOM, value, unit);
   }
@@ -1898,6 +2041,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the 'clear' CSS property.
    */
+  @Override
   public final void setClear(Clear value) {
     setProperty(STYLE_CLEAR, value.getCssName());
   }
@@ -1905,6 +2049,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the color CSS property.
    */
+  @Override
   public final void setColor(String value) {
     setProperty(STYLE_COLOR, value);
   }
@@ -1912,6 +2057,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the cursor CSS property.
    */
+  @Override
   public final void setCursor(Cursor value) {
     setProperty(STYLE_CURSOR, value.getCssName());
   }
@@ -1919,6 +2065,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the display CSS property.
    */
+  @Override
   public final void setDisplay(Display value) {
     setProperty(STYLE_DISPLAY, value.getCssName());
   }
@@ -1926,6 +2073,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the float css property.
    */
+  @Override
   public final void setFloat(Float value) {
     setProperty(DOMImpl.impl.cssFloatPropertyName(), value.getCssName());
   }
@@ -1933,6 +2081,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the font-size css property.
    */
+  @Override
   public final void setFontSize(double value, Unit unit) {
     setProperty(STYLE_FONT_SIZE, value, unit);
   }
@@ -1940,6 +2089,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the font-style CSS property.
    */
+  @Override
   public final void setFontStyle(FontStyle value) {
     setProperty(STYLE_FONT_STYLE, value.getCssName());
   }
@@ -1947,6 +2097,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the font-weight CSS property.
    */
+  @Override
   public final void setFontWeight(FontWeight value) {
     setProperty(STYLE_FONT_WEIGHT, value.getCssName());
   }
@@ -1954,6 +2105,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the height css property.
    */
+  @Override
   public final void setHeight(double value, Unit unit) {
     setProperty(STYLE_HEIGHT, value, unit);
   }
@@ -1961,6 +2113,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the left css property.
    */
+  @Override
   public final void setLeft(double value, Unit unit) {
     setProperty(STYLE_LEFT, value, unit);
   }
@@ -1968,6 +2121,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the line-height css property.
    */
+  @Override
   public final void setLineHeight(double value, Unit unit) {
     setProperty(STYLE_LINE_HEIGHT, value, unit);
   }
@@ -1975,6 +2129,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the list-style-type CSS property.
    */
+  @Override
   public final void setListStyleType(ListStyleType value) {
     setProperty(STYLE_LIST_STYLE_TYPE, value.getCssName());
   }
@@ -1982,6 +2137,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the margin css property.
    */
+  @Override
   public final void setMargin(double value, Unit unit) {
     setProperty(STYLE_MARGIN, value, unit);
   }
@@ -1989,6 +2145,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the margin-bottom css property.
    */
+  @Override
   public final void setMarginBottom(double value, Unit unit) {
     setProperty(STYLE_MARGIN_BOTTOM, value, unit);
   }
@@ -1996,6 +2153,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the margin-left css property.
    */
+  @Override
   public final void setMarginLeft(double value, Unit unit) {
     setProperty(STYLE_MARGIN_LEFT, value, unit);
   }
@@ -2003,6 +2161,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the margin-right css property.
    */
+  @Override
   public final void setMarginRight(double value, Unit unit) {
     setProperty(STYLE_MARGIN_RIGHT, value, unit);
   }
@@ -2010,6 +2169,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the margin-top css property.
    */
+  @Override
   public final void setMarginTop(double value, Unit unit) {
     setProperty(STYLE_MARGIN_TOP, value, unit);
   }
@@ -2017,6 +2177,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the opacity css property.
    */
+  @Override
   public final void setOpacity(double value) {
     DOMImpl.impl.cssSetOpacity(this, value);
   }
@@ -2024,6 +2185,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the outline-color css property.
    */
+  @Override
   public final void setOutlineColor(String value) {
     setProperty(STYLE_OUTLINE_COLOR, value);
   }
@@ -2031,6 +2193,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the outline-style CSS property.
    */
+  @Override
   public final void setOutlineStyle(OutlineStyle value) {
     setProperty(STYLE_OUTLINE_STYLE, value.getCssName());
   }
@@ -2038,6 +2201,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the outline-width css property.
    */
+  @Override
   public final void setOutlineWidth(double value, Unit unit) {
     setProperty(STYLE_OUTLINE_WIDTH, value, unit);
   }
@@ -2045,6 +2209,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the overflow CSS property.
    */
+  @Override
   public final void setOverflow(Overflow value) {
     setProperty(STYLE_OVERFLOW, value.getCssName());
   }
@@ -2052,6 +2217,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the overflow-x CSS property.
    */
+  @Override
   public final void setOverflowX(Overflow value) {
     setProperty(STYLE_OVERFLOW_X, value.getCssName());
   }
@@ -2059,6 +2225,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the overflow-y CSS property.
    */
+  @Override
   public final void setOverflowY(Overflow value) {
     setProperty(STYLE_OVERFLOW_Y, value.getCssName());
   }
@@ -2066,6 +2233,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the padding css property.
    */
+  @Override
   public final void setPadding(double value, Unit unit) {
     setProperty(STYLE_PADDING, value, unit);
   }
@@ -2073,6 +2241,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the padding-bottom css property.
    */
+  @Override
   public final void setPaddingBottom(double value, Unit unit) {
     setProperty(STYLE_PADDING_BOTTOM, value, unit);
   }
@@ -2080,6 +2249,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the padding-left css property.
    */
+  @Override
   public final void setPaddingLeft(double value, Unit unit) {
     setProperty(STYLE_PADDING_LEFT, value, unit);
   }
@@ -2087,6 +2257,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the padding-right css property.
    */
+  @Override
   public final void setPaddingRight(double value, Unit unit) {
     setProperty(STYLE_PADDING_RIGHT, value, unit);
   }
@@ -2094,6 +2265,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the padding-top css property.
    */
+  @Override
   public final void setPaddingTop(double value, Unit unit) {
     setProperty(STYLE_PADDING_TOP, value, unit);
   }
@@ -2101,6 +2273,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the position CSS property.
    */
+  @Override
   public final void setPosition(Position value) {
     setProperty(STYLE_POSITION, value.getCssName());
   }
@@ -2108,6 +2281,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the value of a named property.
    */
+  @Override
   public final void setProperty(String name, String value) {
     assertCamelCase(name);
     setPropertyImpl(name, value);
@@ -2116,6 +2290,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the value of a named property in the specified units.
    */
+  @Override
   public final void setProperty(String name, double value, Unit unit) {
     assertCamelCase(name);
     setPropertyImpl(name, value + unit.getType());
@@ -2124,7 +2299,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the value of a named property, in pixels.
    * 
-   * This is shorthand for <code>value + "px"</code>.
+   * @Override This is shorthand for <code>value + "px"</code>.
    */
   public final void setPropertyPx(String name, int value) {
     setProperty(name, value, Unit.PX);
@@ -2133,6 +2308,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the right css property.
    */
+  @Override
   public final void setRight(double value, Unit unit) {
     setProperty(STYLE_RIGHT, value, unit);
   }
@@ -2140,6 +2316,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the table-layout CSS property.
    */
+  @Override
   public final void setTableLayout(TableLayout value) {
     setProperty(STYLE_TABLE_LAYOUT, value.getCssName());
   }
@@ -2147,6 +2324,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the 'text-align' CSS property.
    */
+  @Override
   public final void setTextAlign(TextAlign value) {
     setProperty(STYLE_TEXT_ALIGN, value.getCssName());
   }
@@ -2154,6 +2332,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the text-decoration CSS property.
    */
+  @Override
   public final void setTextDecoration(TextDecoration value) {
     setProperty(STYLE_TEXT_DECORATION, value.getCssName());
   }
@@ -2161,6 +2340,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the 'text-indent' CSS property.
    */
+  @Override
   public final void setTextIndent(double value, Unit unit) {
     setProperty(STYLE_TEXT_INDENT, value, unit);
   }
@@ -2168,6 +2348,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the 'text-justify' CSS3 property.
    */
+  @Override
   public final void setTextJustify(TextJustify value) {
     setProperty(STYLE_TEXT_JUSTIFY, value.getCssName());
   }
@@ -2175,6 +2356,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the 'text-overflow' CSS3 property.
    */
+  @Override
   public final void setTextOverflow(TextOverflow value) {
     setProperty(STYLE_TEXT_OVERFLOW, value.getCssName());
   }
@@ -2182,6 +2364,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the 'text-transform' CSS property.
    */
+  @Override
   public final void setTextTransform(TextTransform value) {
     setProperty(STYLE_TEXT_TRANSFORM, value.getCssName());
   }
@@ -2189,6 +2372,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the top css property.
    */
+  @Override
   public final void setTop(double value, Unit unit) {
     setProperty(STYLE_TOP, value, unit);
   }
@@ -2196,6 +2380,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the vertical-align CSS property.
    */
+  @Override
   public final void setVerticalAlign(VerticalAlign value) {
     setProperty(STYLE_VERTICAL_ALIGN, value.getCssName());
   }
@@ -2203,6 +2388,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the vertical-align CSS property.
    */
+  @Override
   public final void setVerticalAlign(double value, Unit unit) {
     setProperty(STYLE_VERTICAL_ALIGN, value, unit);
   }
@@ -2210,6 +2396,7 @@ public class Style extends JavaScriptObject {
   /**
    * Sets the visibility CSS property.
    */
+  @Override
   public final void setVisibility(Visibility value) {
     setProperty(STYLE_VISIBILITY, value.getCssName());
   }
@@ -2217,6 +2404,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the 'white-space' CSS property.
    */
+  @Override
   public final void setWhiteSpace(WhiteSpace value) {
     setProperty(STYLE_WHITE_SPACE, value.getCssName());
   }
@@ -2224,6 +2412,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the width css property.
    */
+  @Override
   public final void setWidth(double value, Unit unit) {
     setProperty(STYLE_WIDTH, value, unit);
   }
@@ -2231,6 +2420,7 @@ public class Style extends JavaScriptObject {
   /**
    * Set the z-index css property.
    */
+  @Override
   public final void setZIndex(int value) {
     setProperty(STYLE_Z_INDEX, value + "");
   }
